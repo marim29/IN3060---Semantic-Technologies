@@ -1,0 +1,22 @@
+prefix fam:   <http://www.ifi.uio.no/IN3060/family#>
+prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix sim:   <http://www.ifi.uio.no/IN3060/simpsons#>
+prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
+prefix foaf:  <http://xmlns.com/foaf/0.1/> 
+
+#Write a CONSTRUCT SPARQL query that produces a FOAF file for Homer,
+#adding his name, a foaf:knows relationship to his spouse, and the name of
+#his spouse.
+
+CONSTRUCT {
+	?homer a foaf:Person .
+	?homer foaf:name "Homer Simpson" .
+	?homer foaf:knows _?x.
+	_?x a foaf:Person .
+	
+	} WHERE {	
+
+	_?x fam:isRelativeOf ?homer . 
+}
+	
+	

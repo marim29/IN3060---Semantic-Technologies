@@ -1,0 +1,19 @@
+prefix fam:   <http://www.ifi.uio.no/IN3060/family#>
+prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix sim:   <http://www.ifi.uio.no/IN3060/simpsons#>
+prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
+prefix foaf:  <http://xmlns.com/foaf/0.1/> 
+
+#Query: Find all of Maggie’s grandmothers. Result variable name: ?grandmother.
+
+SELECT ?grandmother
+WHERE {
+    ?p a foaf:Person .
+    ?p foaf:name "Maggie Simpson" .
+    ?grandmother a foaf:Person .
+
+    ?p fam:hasParent [a foaf:Person ;
+            fam:hasMother ?grandmother 
+            ] .
+}
+}

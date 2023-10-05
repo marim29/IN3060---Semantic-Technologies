@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mari/ontologies/2021/4/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/mari/ontologies/2021/4/untitled-ontology-21"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:property="http://dbpedia.org/property/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mari/ontologies/2021/4/untitled-ontology-21">
+        <owl:imports rdf:resource="http://sws.ifi.uio.no/inf3580/v14/oblig/6/racehorse"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/property/dam -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/property/dam">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#dam"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/property/f -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/f">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#sire"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/ff -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/ff">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/property/f"/>
+            <rdf:Description rdf:about="http://dbpedia.org/property/f"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/fm -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/fm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/property/f"/>
+            <rdf:Description rdf:about="http://dbpedia.org/property/m"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/m -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/m">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#dam"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/mf -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/mf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/property/m"/>
+            <rdf:Description rdf:about="http://dbpedia.org/property/f"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/mm -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/mm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/property/m"/>
+            <rdf:Description rdf:about="http://dbpedia.org/property/m"/>
+        </owl:propertyChainAxiom>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/race -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/race">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/sex -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/sex">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Female"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Male"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/sire -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/sire">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#sire"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/trainer -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/trainer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#dam -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#dam"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#sire -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#sire"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/property/horsename -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/horsename">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/property/name -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/property/name">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/Stallion -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/resource/Stallion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Stallion"/>
+        <property:sex rdf:resource="http://dbpedia.org/resource/Stallion"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

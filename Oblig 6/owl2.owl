@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-16="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#dam -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#dam">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hadInterestIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hadInterestIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasCompeted -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasCompeted">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasTrainer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasTrainer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasCompeted"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasWon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasWon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasCompeted"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#sire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#sire">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ancestor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#trains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#trains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Animal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Animal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ColdbloodedHorse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ColdbloodedHorse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#WarmbloodedHorse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Animal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Filly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Filly">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Female"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#age"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#dam"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Female"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#sire"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Male"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Animal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#MonteHorse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#MonteHorse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasCompeted"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#MonteRace"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#MonteRace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#MonteRace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hadInterestIn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#trains"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasCompeted"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasCompeted"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasTrainer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#name"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Stallion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Stallion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Male"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#age"/>
+                                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#SuperHorse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#SuperHorse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#hasWon"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RaceHorse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#WarmbloodedHorse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#WarmbloodedHorse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#DoctorRodney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#DoctorRodney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Horse"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doctor Rodney</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#KjellHåkonsen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#KjellHåkonsen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Person"/>
+        <trains rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RexRodney"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kjell Håkonsen</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ReadySteadyGo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#ReadySteadyGo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#Filly"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#MonteHorse"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ready Steady Go</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RexRodney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#RexRodney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#SuperHorse"/>
+        <hasTrainer rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#KjellHåkonsen"/>
+        <hasWon rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#:Elitloppet1986"/>
+        <sire rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#DoctorRodney"/>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rex Rodney</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#:Elitloppet1986 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#:Elitloppet1986">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#HorseRace"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-16#MonteRace"/>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

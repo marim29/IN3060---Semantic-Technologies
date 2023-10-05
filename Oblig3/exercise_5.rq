@@ -1,0 +1,16 @@
+prefix fam:   <http://www.ifi.uio.no/IN3060/family#>
+prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix sim:   <http://www.ifi.uio.no/IN3060/simpsons#>
+prefix xsd:   <http://www.w3.org/2001/XMLSchema#>
+prefix foaf:  <http://xmlns.com/foaf/0.1/> 
+
+#Query: Find everyone older than 10. Order by age, oldest first. Output
+#name and age. Result variable names: ?person, ?age.
+
+SELECT ?person ?age
+WHERE { 
+	?p foaf:name ?person .
+	?p foaf:age ?age .
+	FILTER (?age > 10)
+}
+ORDER BY DESC(?age)

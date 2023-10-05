@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mari/ontologies/2021/3/untitled-ontology-10">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdbloodedHorse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HorseRace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonteHorse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MonteRace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RaceHorse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stallion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuperHorse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WarmbloodedHorse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ancestor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hadInterestIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompeted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTrainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sire"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#trains"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Filly"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#MonteHorse"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#RaceHorse"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasCompeted"/>
+                <Class IRI="#MonteRace"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RaceHorse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCompeted"/>
+            <Class IRI="#HorseRace"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RaceHorse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTrainer"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SuperHorse"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#RaceHorse"/>
+            <ObjectMinCardinality cardinality="100">
+                <ObjectProperty IRI="#hasWon"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ColdbloodedHorse"/>
+        <Class IRI="#Horse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Female"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Filly"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Filly"/>
+        <Class IRI="#Horse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonteHorse"/>
+        <Class IRI="#RaceHorse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonteRace"/>
+        <Class IRI="#HorseRace"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RaceHorse"/>
+        <Class IRI="#Horse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stallion"/>
+        <Class IRI="#Horse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuperHorse"/>
+        <Class IRI="#RaceHorse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WarmbloodedHorse"/>
+        <Class IRI="#Horse"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#HorseRace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdbloodedHorse"/>
+        <Class IRI="#WarmbloodedHorse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Female"/>
+        <Class IRI="#Male"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HorseRace"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MonteHorse"/>
+        <Class IRI="#SuperHorse"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ancestor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dam"/>
+        <ObjectProperty IRI="#ancestor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hadInterestIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCompeted"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTrainer"/>
+        <ObjectProperty IRI="#hasCompeted"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWon"/>
+        <ObjectProperty IRI="#hasCompeted"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sire"/>
+        <ObjectProperty IRI="#ancestor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#trains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hadInterestIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompeted"/>
+        <Class IRI="#RaceHorse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTrainer"/>
+        <Class IRI="#RaceHorse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWon"/>
+        <Class IRI="#RaceHorse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#trains"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hadInterestIn"/>
+        <Class IRI="#HorseRace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompeted"/>
+        <Class IRI="#HorseRace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTrainer"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWon"/>
+        <Class IRI="#HorseRace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#trains"/>
+        <Class IRI="#Horse"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#age"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#age"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#name"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <HasKey>
+        <Class IRI="#RaceHorse"/>
+        <DataProperty IRI="#name"/>
+    </HasKey>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
